@@ -25,7 +25,7 @@ END;
 										description VARCHAR(128) CHARACTER SET utf8 COLLATE utf8_unicode_ci, 
 										prsalu VARCHAR(7), 
 										id INT(11) AUTO_INCREMENT KEY, 
-										filename VARCHAR(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci, 
+										filename VARCHAR(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci, 
 										isbn INT(11), 
 										myorder INT(11),
 										prsalr VARCHAR(7),

@@ -7,14 +7,14 @@
 	global $db_database;
 	global $db_username;
 	global $db_password;
-	$db_hostname = 'pajamas.home';//'mysql.hostinger.com.ua';
+	$db_hostname = 'pajamas_hostinger.home';//'mysql.hostinger.com.ua';
 	$db_database = 'pajamas';//'u742892412_pajam';
 	$db_username = 'root';//'u742892412_pajam';
 	$db_password = '8585';//'SFgU9CO';
 	
-	define("COOK_LOCATION", "pajamas.home");//http://pajamas.home/
-	define("ROOT_LOCATION", "http://pajamas.home/");// http://pajamas.esy.es/
-	define("M_LOCATION", "http://m.pajamas.home/");//http://m.pajamas.esy.es
+	define("COOK_LOCATION", "pajamas_hostinger.home");//http://pajamas.home/
+	define("ROOT_LOCATION", "http://pajamas_hostinger.home/");// http://pajamas.esy.es/
+	define("M_LOCATION", "http://m.pajamas_hostinger.home/");//http://m.pajamas.esy.es
 	$dirgaupl = ROOT_LOCATION . "gallery_upload.php";
 	$dirbycus = ROOT_LOCATION . "buying_customers.php";
 	$dirpajs = ROOT_LOCATION . "";//"pajamas.php";
@@ -42,7 +42,7 @@
 		//global $db_username;
 		//global $db_password;
 		
-		protected $db_hostname = 'pajamas.home';//'mysql.hostinger.com.ua';
+		protected $db_hostname = 'pajamas_hostinger.home';//'mysql.hostinger.com.ua';
 		protected $db_database = 'pajamas';//'u742892412_pajam';
 		protected $db_username = 'root';//'u742892412_pajam';
 		protected $db_password = '8585';//'SFgU9CO';
@@ -65,9 +65,9 @@
 		public $dircook;
 		public $dirbsbigcl;
 
-		const M_LOCATION = "http://m.pajamas.home";//"http://m.pajamas.esy.es";
-		const ROOT_LOCATION = "http://pajamas.home/";//"http://pajamas.esy.es/";
-		const COOK_LOCATION = "http://pajamas.home/";//"pajamas.esy.es";
+		const M_LOCATION = "http://m.pajamas_hostinger.home";//"http://m.pajamas.esy.es";
+		const ROOT_LOCATION = "http://pajamas_hostinger.home/";//"http://pajamas.esy.es/";
+		const COOK_LOCATION = "http://pajamas_hostinger.home/";//"pajamas.esy.es";
 		public $foo_mysgli;
 		
 		function __construct(){

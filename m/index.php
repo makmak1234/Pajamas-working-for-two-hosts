@@ -17,11 +17,11 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Дата в прошлом
 
 require_once "../login.php";
 
-//session_set_cookie_params('','/','m.'.$dircook, false, false);//'m.pajamas.esy.es'
+session_set_cookie_params('','/','m.'.$dircook, false, false);//'m.pajamas.esy.es'
 
 if(isset($_GET["mobcook"])){ //$_GET["mobcook"]
-	//setcookie("mobcook", "0", 0, "", ".".$dircook, false, true);//.pajamas.esy.es
-	$_SESSION["mobcook"] = 0;
+	setcookie("mobcook", "0", 0, "", ".".$dircook, false, true);//.pajamas.esy.es
+	//$_SESSION["mobcook"] = 0;
 	$mydir = "." . "$dirpajs";
 	if(isset($_GET["idpost"])){
 		if($_GET["idpost"] != ""){ 

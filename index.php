@@ -35,8 +35,8 @@
 	//require_once 'login.php';
 //setcookie("mobcook", "1");
 	if(isset($_GET["mobcook"])){ //$_GET["mobcook"]
-		//setcookie("mobcook", "1", 0, "", ".".$dircook, false, true); //.pajamas.esy.es
-		$_SESSION["mobcook"] = 1;
+		setcookie("mobcook", "1", 0, "", ".".$dircook, false, true); //.pajamas.esy.es
+		//$_SESSION["mobcook"] = 1;
 		if(isset($_GET["idpost"])){
 			if($_GET["idpost"] != ""){ 
 				$idpost = $_GET["idpost"];
@@ -60,8 +60,8 @@ END;
 		//header ("Location: $dirpajsm?" .session_name().'='.session_id());
 	}
 	$ua=getBrowser();		
-	if(isset($_SESSION["mobcook"])){ //$_COOKIE["mobcook"]
-		if($_SESSION["mobcook"] == "1") $ua['system'] = true;
+	if(isset($_COOKIE["mobcook"])){ //$_COOKIE["mobcook"]
+		if($_COOKIE["mobcook"] == "1") $ua['system'] = true;
 		else $ua['system'] = false;
 	}
 //$ua['system'] = true;

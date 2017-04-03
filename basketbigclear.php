@@ -65,8 +65,11 @@ if(isset($_GET["exchrtv"]) && isset($_GET["elem"])){
 		$mydir = $dirpajs;
 	$valcook = "none";
 	if(isset($_COOKIE["valcook"]))$valcook = $_COOKIE["valcook"];
+
+	if($valcook == 0) echo "Оптовые цены";
+	if($valcook == 1) echo "Розничные цены"; 
 		echo <<<END
-	valcook = $valcook
+	<!--valcook = $valcook-->
 		<form name="inputgoodsid" action="$mydir" method="POST">
 			<input type="hidden" name="$nameinp" value="$inputgoodsid" />
 	<!--<input type="submit" value="Посмотрел">-->

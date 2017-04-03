@@ -22,12 +22,6 @@ END;
 						<tr><td>К оплате: $priceall $prsite</td></tr>
 					</table>
 				</div>
-				<script>
-					function movbigcart(dirbasbi){
-						//document.getElementById("idtest").innerHTML = "this.responseText";
-						var query = dirbasbi;
-						window.location.href= query;
-					}
-				</script>
+				
 END;
 ?>

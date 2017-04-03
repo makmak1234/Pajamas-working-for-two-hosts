@@ -1,4 +1,10 @@
-﻿//ajax для маленькой корзины
+﻿function movbigcart(dirbasbi){
+	//document.getElementById("idtest").innerHTML = "this.responseText";
+	var query = dirbasbi;
+	window.location.href= query;
+}
+
+//ajax для маленькой корзины
 function goodsbasketcheck(row, clearone, plus)
 {
 //	document.getElementById('basketsmall').innerHTML = plus;
